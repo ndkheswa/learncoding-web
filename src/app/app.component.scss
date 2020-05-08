@@ -1,0 +1,10 @@
+.parent {
+  height: 100px;
+  .left {
+    background-color: red;
+  }
+
+  .right {
+    background-color: cyan;
+  }
+}

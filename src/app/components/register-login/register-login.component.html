@@ -1,0 +1,40 @@
+<div class="register-container">
+  <div class="three-dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <div class="circle">
+    <div class="rect">
+      Bring that Idea You've Always Wanted to Build to Life.
+    </div>
+  </div>
+  <div fxLayout="column" class="login-form-container">
+    <div class="signup-form">
+      <form [formGroup]="clientForm" autocomplete="off"  (ngSubmit)="login(clientForm.value)" fxLayout="column wrap"
+          fxLayoutAlign="center center" fxLayoutGap="10px">
+          <h1>Sign up for Free</h1>
+          <mat-card-content>
+            <mat-form-field appearance="outline">
+              <input matInput placeholder="Full Name" formControlName="fullName">
+              <mat-icon matPrefix>person</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-icon matPrefix>email_outline</mat-icon>
+              <input matInput placeholder="Email" formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-icon matPrefix>lock</mat-icon>
+              <input matInput placeholder="Password" formControlName="password" type="password">
+            </mat-form-field>
+          </mat-card-content>
+          <div class="button-container">
+            <button mat-stroked-button>Start coding now</button>
+          </div>
+        </form>
+    </div>
+    <div class="text">
+      By signing up, you agree to Learncoding RSA's <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.
+    </div>
+  </div>
+</div>

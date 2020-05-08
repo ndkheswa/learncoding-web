@@ -1,0 +1,110 @@
+.register-container {
+  display: flex;
+  justify-content: space-between;
+
+  .three-dots {
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    position: relative;
+    margin: 0 50px 0;
+
+    .dot {
+      width: 25px;
+      height: 25px;
+      border-radius: 50px;
+      background-color: #4C26AF;
+    }
+  }
+
+  .circle {
+    display: flex;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background: url("/../assets/marc-mueller-45xWrNPD7SE-unsplash.jpg");
+    background-size: cover;
+    margin-left: 200px;
+
+    .rect {
+      display: flex;
+      position: relative;
+      height: 200px;
+      width: 420px;
+      background-color: #7300E4;
+      top: 50px;
+      left: -250px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 48px;
+      padding: 40px 40px 0;
+    }
+
+    .triangle {
+      position: relative;
+      width: 0;
+      height: 0;
+      border-bottom: 300px solid #48F6A9;
+      border-right: 300px solid transparent;
+      margin-top: 300px;
+      right: 450px;
+    }
+  }
+
+  .login-form-container {
+    display: flex;
+    .signup-form {
+      form {
+        width: 400px;
+        mat-card-content {
+          mat-form-field {
+            display: flex;
+            input {
+              font-size: 18px;
+            }
+            mat-icon {
+              color: #A9A9A9;
+            }
+          }
+        }
+        h1 {
+          margin-right: 130px;
+        }
+        .button-container {
+          display: flex;
+          justify-content: center;
+          button {
+            background-color: #7E00E4;
+            padding: 5px 20px;
+            color: #fff;
+            width: 290px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .text {
+      margin: 10px 0 40px 56px;
+      width: 300px;
+    }
+  }
+
+  .mat-form-field .mat-form-field-infix {
+    width: 270px;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .register-container {
+    padding: 0;
+    justify-content: center;
+    .circle {
+      display: none;
+    }
+    .three-dots {
+      display: none;
+    }
+  }
+}

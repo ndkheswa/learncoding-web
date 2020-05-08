@@ -1,0 +1,39 @@
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1400px;
+}
+
+.register-card {
+  padding: 10px;
+  width: 400px;
+}
+
+button:hover {
+  background-color: #7E00E4;
+  color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+  .register-card {
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  h2 {
+    margin-bottom: 1px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .main-content {
+    justify-content: center;
+  }
+}

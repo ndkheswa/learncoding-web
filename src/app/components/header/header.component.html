@@ -1,0 +1,41 @@
+<mat-toolbar class="expanded-toolbar">
+
+  <mat-toolbar-row>
+    <button mat-icon-button class="menu">
+      <mat-icon arial-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+
+    <div fxFlex fxLayout fxLayoutAlign="flex-end">
+      <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+
+        <li>
+          <button mat-button *ngIf="isAuthenticated else elseBlock" (click)="logout()">
+            <mat-icon>logout_outline</mat-icon> Logout
+          </button>
+          <ng-template #elseBlock>
+            <div class="login-button">
+              <button mat-button (click)="login()">
+                Login
+              </button>
+            </div>
+          </ng-template>
+        </li>
+
+        <li fxHide.xs>
+          <div class="signup-button">
+            <button mat-button (click)="login()">
+              Sign up
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <button mat-icon-button>
+            <mat-icon>person_outline</mat-icon>
+          </button>
+        </li>
+
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
