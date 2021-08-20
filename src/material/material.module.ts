@@ -16,6 +16,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const modules: any[] = [
   MatButtonModule,
@@ -33,7 +34,8 @@ const modules: any[] = [
   MatPaginatorModule,
   MatSortModule,
   MatProgressSpinnerModule,
-  MatSelectModule
+  MatSelectModule,
+  MatDialogModule
 ];
 
 @NgModule({

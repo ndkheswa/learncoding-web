@@ -20,6 +20,8 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { GetStartedComponent } from './components/get-started/get-started.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RegisterLoginComponent } from './components/register-login/register-login.component';
+import { SuccessDialogComponent } from './components/shared/dialogs/success-dialog/success-dialog.component';
+import { ErrorDialogComponent } from './components/shared/dialogs/error-dialog/error-dialog.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { RegisterLoginComponent } from './components/register-login/register-log
     CategoriesComponent,
     GetStartedComponent,
     FooterComponent,
-    RegisterLoginComponent
+    RegisterLoginComponent,
+    SuccessDialogComponent,
+    ErrorDialogComponent
   ],
   imports: [
     HttpClientModule,
